@@ -310,12 +310,17 @@ section {
     gap: 24px;
 }
 
+.services-grid-two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .service-card {
     background-color: var(--bg-tertiary);
     border: 1px solid var(--border-color);
     padding: 40px 32px;
     border-radius: var(--radius-md);
     transition: var(--transition);
+    min-height: 100%;
 }
 
 .service-card:hover {
@@ -341,6 +346,28 @@ section {
 .service-title {
     font-size: 1.25rem;
     margin-bottom: 12px;
+}
+
+.service-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 32px;
+    margin-bottom: 20px;
+    padding: 0 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.service-text {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.7;
 }
 
 /* --- IT ACTIVITIES MINCIFRA --- */
@@ -555,6 +582,10 @@ section {
     }
 
     .about-grid, .req-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid-two {
         grid-template-columns: 1fr;
     }
     
