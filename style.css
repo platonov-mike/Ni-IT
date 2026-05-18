@@ -428,10 +428,7 @@ section {
 
 /* --- ABOUT --- */
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 64px;
-    align-items: center;
+    max-width: 960px;
 }
 
 .about-text {
@@ -445,38 +442,6 @@ section {
 
 .about-text strong {
     color: var(--text-main);
-}
-
-.about-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.stat-card {
-    background-color: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    padding: 32px;
-    border-radius: var(--radius-md);
-}
-
-.stat-value {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: -0.02em;
-}
-
-.stat-label {
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: var(--text-main);
-    margin-bottom: 4px;
-}
-
-.stat-desc {
-    font-size: 0.9375rem;
-    color: var(--text-muted);
 }
 
 /* --- REQUISITES --- */
